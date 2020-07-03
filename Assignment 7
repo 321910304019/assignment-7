@@ -1,0 +1,131 @@
+In [1]:
+
+#Length of the string 
+str=input("Enter the string:") 
+c=len(str) 
+print("Length of the string is",c) 
+
+Enter the string:
+Programming through Python 
+Length of the string is 26 
+
+In [2]:
+
+#Frequency of Charcters 
+str=input("Enter the string:") 
+ch=input("Enter the character to be checked:") 
+count=0 
+for letter in str:
+ if letter==ch: 
+count=count+1 
+print("The",ch,"Letter","in",str,"has repeated for",count,"times") 
+
+Enter the string:
+Railway Station Enter 
+the character to be checked:
+a The a Letter in Railway 
+Station has repeated for 3 times 
+
+In [3]:
+
+#Swapping the characters 
+of string def strs(a, b): 
+n_a=b[:2] + a[2:] 
+n_b=a[:2] + b[2:] 
+return n_a+' '+n_b 
+x=input("Enter the first string:") 
+y=input("Enter the second string:") 
+print("The Original String:",x+y)
+ print("The Swapped String:",strs(x,y)) 
+
+Enter the first string:
+Captain Enter the second string:
+America The Original String: 
+CaptainAmerica The Swapped String: 
+Amptain Caerica 
+
+In [4]:
+
+#Upper and Lower cases 
+str=input("Enter any string:")
+ print("The String in Upper case is:",str.upper()) 
+print("The String in Lower case is:",str.lower()) 
+
+Enter any string:
+The Tesseract of Void The String 
+in Upper case is: 
+THE TESSERACT OF VOID
+ The String in Lower case is: 
+the tesseract of void 
+
+In [5]:
+
+#New line removal 
+str="I'm Iron Man\n" 
+print(str) 
+print(str.rstrip()) 
+
+I'm Iron Man I'm Iron Man 
+
+In [6]:
+
+#Substring occurrences 
+in a Main String
+ str=input("Enter the string:")
+ ch=input("Enter the substring presence to be checked:") 
+print(str.count(ch)) 
+
+Enter the string:
+How many times would 
+a wood chuck chuck if a wood 
+chuck could chuck do? 
+Enter the substring presence 
+to be checked:
+chuck 4 
+
+In [7]:
+
+#Conversion of string 
+into list import ast 
+str="['Im the one, the world call me by name IRON MAN']" 
+print(ast.literal_eval(str)) 
+
+['Im the one, the world call me by name IRON MAN'] 
+
+In [8]:
+
+#Deletion of character 
+from a string def char_dlt(str, n): 
+x= str[:n] y=str[n+1:] 
+return x+y 
+ch=input("Enter the string:") 
+n=int(input("Enter the index where the character is to be deleted:")) 
+print(char_dlt(ch,n)) 
+
+Enter the string:
+Enhancement Enter the index 
+where the character is to be deleted:
+4 Enhacement 
+
+In [9]:
+
+str=input("Enter the string:") 
+for index,char in enumerate(str): 
+print(char) 
+
+Enter the string:GITAM University G I T A M U n i v e r s i t y 
+
+In [10]:
+
+#Length of string without 
+len function 
+str=input("Enter the string:") 
+count=0 for i in str: 
+count=count+1 
+print("Length of the string is:")
+ print(count) 
+
+Enter the string:
+Refrigirator Length of 
+the string is: 12
+
